@@ -1,0 +1,11 @@
+<h1>Login Page</h1>
+
+<form action="{% url 'hogaya' %}" method="POST">
+    {% csrf_token %}
+    <label for="">Username</label>
+    {{ form.username }}
+    <br><br>
+    <label for="">Password</label>
+    {{ form.password }}
+    <input type="submit" value="Login">
+</form>
